@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "request_id": "example-001",
+  "product_type": "GAME_3D",
+  "source_factory": "3d-game-factory",
+  "repository_full_name": "shihuiarenjinba-png/example-project",
+  "source_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "artifact": {
+    "uri": "https://example.org/not-real/game.msix",
+    "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "bytes": 2048,
+    "package_kind": "MSIX"
+  },
+  "qa": {
+    "build": "PASS",
+    "automated": "PASS",
+    "human": "PASS",
+    "licensing": "PASS",
+    "approval_reference": "example-approval"
+  }
+}
