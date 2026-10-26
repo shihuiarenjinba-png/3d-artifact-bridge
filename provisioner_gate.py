@@ -27,7 +27,8 @@ def inspect(request, response):
         errors.append("source factory mismatch")
     if not _match(ID, request.get("request_id")):
         errors.append("invalid request id")
-    repo = str(request.get("repository_owner", "")) + "/" + str(request.get("repository_name", ""))
+    owner, name = request.get("repository_owner"), request.get("repository_name")
+    repo = f"{owner}/{name}" if isinstance(owner, str) and isinstance(name, str) else ""
     if not _match(REPO, repo):
         errors.append("invalid repository")
     if type(request.get("dry_run")) is not bool:
